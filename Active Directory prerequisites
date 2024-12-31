@@ -29,7 +29,14 @@ NetBIOS domain name = LAB, next, install when prereq are done
 Reboot
 
 
+# make sure everything is working
 
+Look for Active directory programs like you know how
+After opening AD you'll see your forest. 
+You'll see domain controller and see your current server.
+
+Also search for DNS and find your DNS server application
+from cmd run nslookup lab windows and see the name resolve to the IP
 
 
 
