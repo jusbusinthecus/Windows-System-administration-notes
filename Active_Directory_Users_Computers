@@ -1,1 +1,49 @@
+# Import the Active Directory module
+Import-Module ActiveDirectory
 
+do {
+    # Prompt for user parameters
+    $userName = Read-Host "Enter the username for the new account"
+    $password = Read-Host "Enter the password for the new account" -AsSecureString
+    $fullName = Read-Host "Enter the full name for the new account"
+    $description = Read-Host "Enter a description for the new account"
+
+    # Create the new user account in Active Directory
+    New-ADUser -Name $fullName -SamAccountName $userName -UserPrincipalName "$userName@yourdomain.com" `
+               -AccountPassword $password -Description $description -Enabled $true
+
+    # Prompt for group membership
+    Write-Host "Select a group to add this user to:"
+    Write-Host "1. Domain Admins"
+    Write-Host "2. Users"
+    Write-Host "3. Remote Desktop Users"
+    Write-Host "4. No Group"
+    
+    $groupChoice = Read-Host "Enter the number of your choice (1-4)"
+    
+    switch ($groupChoice) {
+        1 {
+            Add-ADGroupMember -Identity "Domain Admins" -Members $userName
+            Write-Host "$userName added to Domain Admins group."
+        }
+        2 {
+            Add-ADGroupMember -Identity "Users" -Members $userName
+            Write-Host "$userName added to Users group."
+        }
+        3 {
+            Add-ADGroupMember -Identity "Remote Desktop Users" -Members $userName
+            Write-Host "$userName added to Remote Desktop Users group."
+        }
+        4 {
+            Write-Host "No group added for $userName."
+        }
+        default {
+            Write-Host "Invalid choice, no group added for $userName."
+        }
+    }
+
+    # Ask if you want to create another user
+    $continue = Read-Host "Do you want to create another user? (yes/no)"
+} while ($continue -eq "yes")
+
+Write-Host "User account creation process completed."
