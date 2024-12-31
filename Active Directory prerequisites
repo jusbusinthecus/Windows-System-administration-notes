@@ -19,3 +19,19 @@ server manager
 Add roles and feautures, next, next
 select Active directory services, select DNS server as well, add features, next, next, next, install
 
+close
+
+on server manager dashboard click notifcations and promote server to domain controller.
+Add new forest
+Root domain name = mylabdc.local, next
+set password: same as admin, next, next
+NetBIOS domain name = LAB, next, install when prereq are done
+Reboot
+
+
+
+
+
+
+
+
