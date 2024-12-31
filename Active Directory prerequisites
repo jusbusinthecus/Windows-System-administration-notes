@@ -2,3 +2,5 @@ TO start active directory here is what you need first
 
 DNS
 Static IP address
+Domain controller name = mylabdc.local
+NetBIOS domain name = lab
