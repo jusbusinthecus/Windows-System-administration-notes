@@ -4,3 +4,18 @@ DNS
 Static IP address
 Domain controller name = mylabdc.local
 NetBIOS domain name = lab
+
+ping an IP on the VM and make sure it is not taken, no response means it is available
+
+Set the static IP for the server with the IP that is available, the way you know how.
+your gateway will show with ipconfig
+
+DNS is the same as default gateway and test with google.com
+
+
+# Active Directory install
+
+server manager
+Add roles and feautures, next, next
+select Active directory services, select DNS server as well, add features, next, next, next, install
+
