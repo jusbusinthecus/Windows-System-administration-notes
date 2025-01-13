@@ -1,0 +1,8 @@
+What is a site?
+  Defines scope administrative control
+  A scope controls the objects that an admin sees in the configuration manager console and permissions
+  Objects can be users, computers or servers
+  During the install you are asked to create a site. This'll be either standaolone primary, secondary or Central admin site
+
+
+Standalone - A single site that supports all users and devices
