@@ -1,1 +1,78 @@
-ASSET 
+ASSET MANAGEMENT - Printers, computers, Servers and softwares
+
+Hardware/software inventory: 
+- Computers and software
+- This is used to collect information about the software and hardware configuration of client computers in your organization
+- One tool that we can use to determine the hardware and software inventory installed on a computer is called the Resource Explorer. 
+		After the computer's hardware and software policy has been pushed out to the clients and inventoried.
+		There's another tool called queries that you can use to gather information on computers. For example, Here's a query that gives the following results for all systems.
+
+
+
+
+Asset Intelligence:
+- Software licenses for software
+- Using asset intelligence, you can inventory and manage software licensing usage by importing software 
+		licensing information into the configuration manager database to view it against what is being used.
+
+
+
+
+
+Software meetering:
+- How many times or how long a specific software was used in your organization
+	Find our which machines were not using a particular software, which could save the company money on software.
+
+- Your manager may ask you to provide utilization of a specific installed software. You could target specific devices and find out which devices are not using the software saving substantial
+
+money.
+
+
+
+Administrative tasks - dail tasks the admin performs. Updating SCCM and assigning admin roles
+
+Four sub categories:
+
+1) Role-based Administration
+
+- Sccm gives you 15 roles that you can assign to users that will limit their permissions to only accomplish the tasks they are qualified to complete. 
+
+Example The full administrator role allows an admin full access while a read only analyst has read only access.
+
+
+
+2) Remote MANAGEMENT 
+
+- This allows remote control of Sccm clients.
+
+You can use remote control to troubleshoot hardware and software configuration issues.
+
+To configure remote control, open the default client settings, click Remote tools, click configure
+
+settings and complete the setup.
+
+3) In-Console Updates
+
+- Sccm provides an automated method to find and install recommended updates for your
+
+configuration manager infrastructure.
+
+4) Monitoring
+
+- If you need information, open monitoring if you need to troubleshoot your Sccm infrastructure monitoring
+
+is a good place to start.
+
+- There are 22 different functions, including client health reporting, queries, alerts, deployments
+
+and many others.
+
+Monitoring is the first place to go if you need to troubleshoot your Sccm environment.
+
+Reporting.
+
+In the last lecture we took a look at in console reporting.
+
+
+Client MANAGEMENT - These tasks are all oriented towards the user, for example, operating system deployment, software updates and client health.
+
