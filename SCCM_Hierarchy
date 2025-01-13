@@ -10,5 +10,8 @@ Standalone - A single site that supports all users and devices
              All components installed on the one site 
              SCCM can be installed on one server and the site system roles could be spread across several servers.
              All servers point to one site, the standalone sccm server.
-             
+
+  Benefits: Supports 150,000 clients, 
+                    simplified ADministration which means all sccm administration can be done from one server, 
+                    simplified  client assignment and discovery of available resources and services
              
