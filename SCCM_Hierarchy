@@ -6,3 +6,9 @@ What is a site?
 
 
 Standalone - A single site that supports all users and devices
+             Suitable for smaller deployments and able to expand
+             All components installed on the one site 
+             SCCM can be installed on one server and the site system roles could be spread across several servers.
+             All servers point to one site, the standalone sccm server.
+             
+             
