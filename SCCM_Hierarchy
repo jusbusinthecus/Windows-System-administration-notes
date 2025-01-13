@@ -62,3 +62,10 @@ Reasons not to use a CAS:
 
 
 
+Software requirements:
+- Win server 16 or later
+- SQl server 16 or later
+- SSRS - SQL server Reporting services
+- SCCM Endpoint security V1902 or later
+- ADK, WIn PE
+- Win 10
