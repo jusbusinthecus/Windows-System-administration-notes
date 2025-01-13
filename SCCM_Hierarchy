@@ -39,3 +39,26 @@ Benefits:
 
 Problems:
 - slow database replication; consider using management point or distribution point site services roles
+
+
+CENTRAL ADMINISTRATION SITE:
+- Top of hierarchy
+- Users or devices not supported
+- More than one Primary site
+- configure hierachy wide settings that affect the whole hierachy such as policies
+- monitor all sites and objects in the hierachy through the CAS
+
+
+
+Benefits: 
+- Large scale deployments
+- Supports 25 primary sites
+- Central point of administration
+
+
+Reasons not to use a CAS:
+- Slow performance
+- For best performance it is recommended to install SQL database on local SCCM primary and not on a remote server
+
+
+
