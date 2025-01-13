@@ -15,3 +15,27 @@ Standalone - A single site that supports all users and devices
                     simplified ADministration which means all sccm administration can be done from one server, 
                     simplified  client assignment and discovery of available resources and services
              
+Options to expand later into a larger hierarchy
+
+Reasons to use a Standalone primary site: 
+
+- Environment is not dispersed geographically, which means that not dispersed across different timezones
+- You need local management of resources for devices and users.
+
+
+
+Secondary Site:
+- Requires SQL Express
+- Supports 15,000 desktops
+- installed from console
+- CAS or Primary performs Admin functions
+
+
+Benefits:
+- SQL replication is reduced because a smaller portion of the database is necessary to maintain the site.
+- Limited bandwidth; used when you need to manage computers in a remote location with limited bandwidth
+- Used when a remote site has more than 500 clients
+
+
+Problems:
+- slow database replication; consider using management point or distribution point site services roles
